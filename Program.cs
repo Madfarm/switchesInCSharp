@@ -7,8 +7,8 @@
             switch (num)
             {
                 case > 10:
-                System.Console.WriteLine("This num is larger than 10!");
-                break;
+                    System.Console.WriteLine("This num is larger than 10!");
+                    break;
 
                 case > 5:
                     System.Console.WriteLine("This num is larger than 5!");
