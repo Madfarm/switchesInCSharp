@@ -1,7 +1,14 @@
-﻿namespace SwitchTesting
+﻿using ChatGPTExcercises;
+
+namespace SwitchTesting
 {
     class Program
     {
+        static void Main(string[] args)
+        {
+            // switchGo(12, 8);
+            ExcercisesViaMethods.Exercise1();
+        }
         static void switchGo(int num, int num2)
         {
             switch (num, num2)
@@ -20,9 +27,5 @@
             }
         }
 
-        static void Main(string[] args)
-        {
-            switchGo(12, 8);
-        }
     }
 }
