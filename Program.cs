@@ -2,27 +2,27 @@
 {
     class Program
     {
-        static void switchGo(int num)
+        static void switchGo(int num, int num2)
         {
-            switch (num)
+            switch (num, num2)
             {
-                case > 10:
-                    System.Console.WriteLine("This num is larger than 10!");
+                case (> 10, < 5):
+                    System.Console.WriteLine("First num is larger than 10! but the 2nd is less than 5");
                     break;
 
-                case > 5:
-                    System.Console.WriteLine("This num is larger than 5!");
+                case (> 10, > 10):
+                    System.Console.WriteLine("Both are greater than 10!");
                     break;
 
                 default:
-                    System.Console.WriteLine($"The num is {num}");
+                    System.Console.WriteLine($"The first num is {num}, and the second is {num2}");
                     break;
             }
         }
 
         static void Main(string[] args)
         {
-            switchGo(6);
+            switchGo(12, 8);
         }
     }
 }
