@@ -2,22 +2,23 @@
 
 namespace SwitchTesting
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main()
         {
-            // switchGo(12, 8);
             ExcercisesViaMethods.Exercise1();
+            switchGo(11, 4);
         }
+
         static void switchGo(int num, int num2)
         {
             switch (num, num2)
             {
-                case (> 10, < 5):
+                case ( > 10, < 5):
                     System.Console.WriteLine("First num is larger than 10! but the 2nd is less than 5");
                     break;
 
-                case (> 10, > 10):
+                case ( > 10, > 10):
                     System.Console.WriteLine("Both are greater than 10!");
                     break;
 
@@ -26,6 +27,7 @@ namespace SwitchTesting
                     break;
             }
         }
-
     }
+
+
 }
